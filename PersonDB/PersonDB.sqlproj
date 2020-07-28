@@ -56,5 +56,22 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\StoredProcedures" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="PublishProfiles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Person.sql" />
+    <Build Include="dbo\Tables\PhoneNumber.sql" />
+    <Build Include="dbo\Tables\Location.sql" />
+    <Build Include="dbo\Tables\LocationVisit.sql" />
+    <Build Include="dbo\Views\PersonPrimaryPhoneView.sql" />
+    <Build Include="dbo\StoredProcedures\spPerson_LocationsVisited.sql" />
+    <Build Include="dbo\StoredProcedures\spLocation_PeopleVisited.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfiles\PersonDB.publish.xml" />
   </ItemGroup>
 </Project>
