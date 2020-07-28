@@ -61,6 +61,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="PublishProfiles" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Products.sql" />
@@ -75,5 +76,8 @@
     <Build Include="dbo\Stored Procedures\spOrder_Update.sql" />
     <Build Include="dbo\Stored Procedures\spOrder_Delete.sql" />
     <Build Include="dbo\Stored Procedures\spCart_Delete.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfiles\TulipDB.publish.xml" />
   </ItemGroup>
 </Project>
